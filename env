@@ -1,0 +1,3 @@
+# Clash 订阅地址
+export CLASH_URL='订阅地址'
+export CLASH_SECRET=''
