@@ -2,7 +2,7 @@
 
 # 项目介绍
 
-此项目是通过使用开源项目[clash（已跑路）](https://github.com/Dreamacro/clash)作为核心程序，再结合脚本实现简单的代理功能。
+此项目是通过使用开源项目[clash（已跑路）](https://github.com/Dreamacro/clash)作为核心程序，再结合脚本实现简单的代理功能。<br>
 clash核心备份仓库[Clash-backup](https://github.com/Elegybackup/clash-backup)
 
 主要是为了解决我们在服务器上下载GitHub等一些国外资源速度慢的问题。
