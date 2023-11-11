@@ -7,14 +7,14 @@ clash核心备份仓库[Clash-backup](https://github.com/Elegybackup/clash-backu
 
 主要是为了解决我们在服务器上下载GitHub等一些国外资源速度慢的问题。
 
-由于作者已经跑路，当前为Elegycloud进行备份，若有侵犯您的权利，请联系我并删除仓库
+由于作者已经跑路，当前为Elegycloud进行备份，若有侵犯您的权利，请提交issues我会看到并删除仓库<br>
 clash for linux 备份(备份号：202311091510)。
 <br>
 
 # 使用须知
 
 - 运行本项目建议使用root用户，或者使用 sudo 提权。
-- 使用过程中如遇到问题，请优先查已有的 [issues](https://github.com/wanhebin/clash-for-linux/issues)。
+- 使用过程中如遇到问题，请优先查已有的 [issues](https://github.com/Elegybackup/clash-for-linux-backup/issues)。
 - 在进行issues提交前，请替换提交内容中是敏感信息（例如：订阅地址）。
 - 本项目是基于 [clash（已跑路）](https://github.com/Dreamacro/clash) 、[yacd](https://github.com/haishanh/yacd) 进行的配置整合，关于clash、yacd的详细配置请去原项目查看。
 - 此项目不提供任何订阅信息，请自行准备Clash订阅地址。
