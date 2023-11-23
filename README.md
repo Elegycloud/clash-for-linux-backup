@@ -22,6 +22,7 @@ clash for linux 备份(备份号：202311091510)。
 - 运行前请手动更改`.env`文件中的`CLASH_URL`变量值，否则无法正常运行。
 - 当前在RHEL系列和Debian,Kali Linux,ubuntu以及Linux系统中测试过，其他系列可能需要适当修改脚本。
 - 支持 x86_64/aarch64 平台
+- 【注意：kali Linux需要在浏览器设置代理！否则有可能无法使用！】
 
 > **注意**：当你在使用此项目时，遇到任何无法独自解决的问题请优先前往 [Issues](https://github.com/wanhebin/clash-for-linux/issues) 寻找解决方法。由于空闲时间有限，后续将不再对Issues中 “已经解答”、“已有解决方案” 的问题进行重复性的回答。
 
