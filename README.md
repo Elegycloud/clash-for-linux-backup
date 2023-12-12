@@ -26,6 +26,19 @@ clash for linux 备份(备份号：202311091510)。
 - 【若系统代理无法使用，但是想要系统代理，请修改尝试修改start.sh中的端口改成7891！】
 - 【还是无法使用请更换当前网络环境（也是其中一个因素！）】
 
+```bash
+# 开启系统代理
+function proxy_on() {
+	export http_proxy=http://127.0.0.1:修改这里
+	export https_proxy=http://127.0.0.1:修改这里
+	export no_proxy=127.0.0.1,localhost
+    	export HTTP_PROXY=http://127.0.0.1:修改这里
+    	export HTTPS_PROXY=http://127.0.0.1:修改这里
+ 	export NO_PROXY=127.0.0.1,localhost
+	echo -e "\033[32m[√] 已开启代理\033[0m"
+}
+```
+
 > **注意**：当你在使用此项目时，遇到任何无法独自解决的问题请优先前往 [Issues](https://github.com/wanhebin/clash-for-linux/issues) 寻找解决方法。由于空闲时间有限，后续将不再对Issues中 “已经解答”、“已有解决方案” 的问题进行重复性的回答。
 
 <br>
