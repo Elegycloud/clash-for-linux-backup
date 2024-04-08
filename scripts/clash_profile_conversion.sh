@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # 加载clash配置文件内容
 raw_content=$(cat ${Server_Dir}/temp/clash.yaml)
 
@@ -21,7 +22,13 @@ else
       echo "$decoded_content" > ${Server_Dir}/temp/clash_config.yaml
     else
       echo "解码后的内容不符合clash标准，尝试将其转换为标准格式"
-      ${Server_Dir}/tools/subconverter/subconverter -g &>> ${Server_Dir}/logs/subconverter.log
+
+      if [[ $CpuArch =~ "x86_64" || $CpuArch =~ "amd64" ]]; then
+        ${Server_Dir}/tools/subconverter/subconverter -g &>> ${Server_Dir}/logs/subconverter.log
+      elif [[ $CpuArch =~ "arm64" ]]; then
+        ${Server_Dir}/tools/subconverter/subconverter_arm64 -g &>> ${Server_Dir}/logs/subconverter.log
+      fi
+      
       converted_file=${Server_Dir}/temp/clash_config.yaml
       # 判断转换后的内容是否符合clash配置文件标准
       if awk '/^proxies:/{p=1} /^proxy-groups:/{g=1} /^rules:/{r=1} p&&g&&r{exit} END{if(p&&g&&r) exit 0; else exit 1}' $converted_file; then

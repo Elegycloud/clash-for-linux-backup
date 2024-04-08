@@ -84,6 +84,7 @@ if [[ -z "$CpuArch" ]]; then
 	exit 1
 fi
 
+export CpuArch=$CpuArch
 
 ## 临时取消环境变量
 unset http_proxy
@@ -132,11 +133,12 @@ if_success $Text3 $Text4 $ReturnStatus
 
 
 ## 判断订阅内容是否符合clash配置文件标准，尝试转换（当前不支持对 x86_64 以外的CPU架构服务器进行clash配置文件检测和转换，此功能将在后续添加）
-if [[ $CpuArch =~ "x86_64" || $CpuArch =~ "amd64"  ]]; then
+if [[ $CpuArch =~ "x86_64" || $CpuArch =~ "amd64" || $CpuArch =~ "arm64" ]]; then
 	echo -e '\n判断订阅内容是否符合clash配置文件标准:'
 	bash $Server_Dir/scripts/clash_profile_conversion.sh
 	sleep 3
 fi
+
 
 
 ## Clash 配置文件重新格式化及配置
