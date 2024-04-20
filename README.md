@@ -7,6 +7,9 @@ clash核心备份仓库[Clash-backup](https://github.com/Elegycloud/clash-for-li
 
 主要是为了解决我们在服务器上下载GitHub等一些国外资源速度慢的问题。
 
+# 免责声明
+
+
 由于作者已经跑路，当前为Elegycloud进行备份，若有侵犯您的权利，请提交issues我会看到并删除仓库<br>
 clash for linux 备份(备份号：202311091510)。
 若喜欢本项目，请点个小星星！
