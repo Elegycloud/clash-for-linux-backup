@@ -64,31 +64,7 @@ $ cd clash-for-linux
 - 运行启动脚本
 
 ```bash
-$ sudo bash start.sh
-
-正在检测订阅地址...
-Clash订阅地址可访问！                                      [  OK  ]
-
-正在下载Clash配置文件...
-配置文件config.yaml下载成功！                              [  OK  ]
-
-正在启动Clash服务...
-服务启动成功！                                             [  OK  ]
-
-Clash Dashboard 访问地址：http://<ip>:9090/ui
-Secret：xxxxxxxxxxxxx
-
-请执行以下命令加载环境变量: source /etc/profile.d/clash.sh
-
-请执行以下命令开启系统代理: proxy_on
-
-若要临时关闭系统代理，请执行: proxy_off
-
-```
-
-```bash
-$ source /etc/profile.d/clash.sh
-$ proxy_on
+./autconect.sh # 直接运行这个脚本就OK了，就配置并且自动运行了 提示的信息也不用管了
 ```
 
 - 检查服务端口
