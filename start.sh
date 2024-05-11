@@ -111,13 +111,13 @@ Text3="配置文件config.yaml下载成功！"
 Text4="配置文件config.yaml下载失败，退出启动！"
 
 # 尝试使用curl进行下载
-curl -L -k -sS --retry 5 -m 10 -o $Temp_Dir/clash.yaml $URL
+curl --user-agent "Clash/1.18.0" -L -k -sS --retry 5 -m 10 -o $Temp_Dir/clash.yaml $URL
 ReturnStatus=$?
 if [ $ReturnStatus -ne 0 ]; then
 	# 如果使用curl下载失败，尝试使用wget进行下载
 	for i in {1..10}
 	do
-		wget -q --no-check-certificate -O $Temp_Dir/clash.yaml $URL
+		wget --user-agent="Clash/1.18.0" -q --no-check-certificate -O $Temp_Dir/clash.yaml $URL
 		ReturnStatus=$?
 		if [ $ReturnStatus -eq 0 ]; then
 			break
