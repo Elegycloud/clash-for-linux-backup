@@ -21,6 +21,8 @@ clash核心备份仓库[Clash-backup](https://github.com/Elegycloud/clash-for-li
 # 题外话
 由于作者已经跑路，当前仓库仅进行备份，若有侵犯您的权利，请提交issues我会看到并删除仓库<br>
 
+（2024/06/07 留：）其次就是，issue我没有时间回，很抱歉，欢迎各位来一起维护和解决这个仓库的问题！<br>
+
 clash for linux 备份(备份号：202311091510)。
 若喜欢本项目，请点个小星星！
 <br>
