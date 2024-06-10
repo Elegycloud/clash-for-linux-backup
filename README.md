@@ -149,10 +149,9 @@ $ cd clash-for-linux
 
 ```bash
 $ sudo bash shutdown.sh
+```
 
 服务关闭成功，请执行以下命令关闭系统代理：proxy_off
-
-```
 
 ```bash
 $ proxy_off
