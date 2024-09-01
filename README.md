@@ -40,7 +40,7 @@ clash for linux 备份(备份号：202311091510)。
 - 【注意：部分带有桌面端Linux系统的需要在浏览器设置代理！否则有可能无法使用！】
 - 【若系统代理无法使用，但是想要系统代理，请修改尝试修改start.sh中的端口后执行环境变量命令！】
 - 【还是无法使用请更换当前网络环境（也是其中一个因素！）】
-- 【谷歌，twitter，youtube等可能无法ping通，正常现象！】
+- 【部分Linux系统会出现谷歌，twitter，youtube等可能无法ping通，正常现象！】
 > **注意**：当你在使用此项目时，遇到任何无法独自解决的问题请优先前往 [Issues](https://github.com/Elegycloud/clash-for-linux-backup/issue) 寻找解决方法。由于空闲时间有限，后续将不再对Issues中 “已经解答”、“已有解决方案” 的问题进行重复性的回答。
 
 <br>
