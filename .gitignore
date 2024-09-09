@@ -5,3 +5,4 @@ temp/proxy.txt
 temp/config.yaml
 logs
 .env
+.conf/ruleset
