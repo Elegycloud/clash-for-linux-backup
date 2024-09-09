@@ -26,10 +26,10 @@ Log_Dir="$Server_Dir/logs"
 
 # 将 CLASH_URL 变量的值赋给 URL 变量，并检查 CLASH_URL 是否为空
 URL=${CLASH_URL:?Error: CLASH_URL variable is not set or empty}
+IP=${IP:'IP'}
 
 # 获取 CLASH_SECRET 值，如果不存在则生成一个随机数
 Secret=${CLASH_SECRET:-$(openssl rand -hex 32)}
-
 
 
 #################### 函数定义 ####################
@@ -142,7 +142,7 @@ fi
 
 
 ## Clash 配置文件重新格式化及配置
-# 取出代理相关配置 
+# 取出代理相关配置
 #sed -n '/^proxies:/,$p' $Temp_Dir/clash.yaml > $Temp_Dir/proxy.txt
 sed -n '/^proxies:/,$p' $Temp_Dir/clash_config.yaml > $Temp_Dir/proxy.txt
 
@@ -181,7 +181,7 @@ fi
 
 # Output Dashboard access address and Secret
 echo ''
-echo -e "Clash Dashboard 访问地址: http://<ip>:9090/ui"
+echo -e "Clash Dashboard 访问地址: http://${IP}:9090/ui"
 echo -e "Secret: ${Secret}"
 echo ''
 
