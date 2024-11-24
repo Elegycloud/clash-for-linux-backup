@@ -1,5 +1,11 @@
 [TOC]
 
+# 多语言
+
+- [English Documentation (README_en)](README_en.md)
+
+---
+
 # 项目介绍
 
 此项目是通过使用开源项目[clash（已跑路）](https://github.com/Dreamacro/clash)作为核心程序，再结合脚本实现简单的代理功能。<br>
