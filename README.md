@@ -58,14 +58,14 @@ clash for linux 备份(备份号：202311091510)。
 下载项目
 
 ```bash
-$ git clone https://github.com/Elegycloud/clash-for-linux-backup.git
+git clone https://github.com/Elegycloud/clash-for-linux-backup.git
 ```
 
 进入到项目目录，编辑`.env`文件，修改变量`CLASH_URL`的值。
 
 ```bash
-$ cd clash-for-linux
-$ vim .env
+cd clash-for-linux
+vim .env
 ```
 
 > **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
@@ -79,13 +79,13 @@ $ vim .env
 - 进入项目目录
 
 ```bash
-$ cd clash-for-linux
+cd clash-for-linux
 ```
 
 - 运行启动脚本
 
 ```bash
-$ sudo bash start.sh
+sudo bash start.sh
 
 正在检测订阅地址...
 Clash订阅地址可访问！                                      [  OK  ]
@@ -108,8 +108,8 @@ Secret：xxxxxxxxxxxxx
 ```
 
 ```bash
-$ source /etc/profile.d/clash.sh
-$ proxy_on
+source /etc/profile.d/clash.sh
+proxy_on
 ```
 
 - 检查服务端口
@@ -125,7 +125,7 @@ tcp6       0      0 :::7892                 :::*                    LISTEN
 - 检查环境变量
 
 ```bash
-$ env | grep -E 'http_proxy|https_proxy'
+env | grep -E 'http_proxy|https_proxy'
 http_proxy=http://127.0.0.1:7890
 https_proxy=http://127.0.0.1:7890
 ```
@@ -148,19 +148,19 @@ https_proxy=http://127.0.0.1:7890
 - 进入项目目录
 
 ```bash
-$ cd clash-for-linux
+cd clash-for-linux
 ```
 
 - 关闭服务
 
 ```bash
-$ sudo bash shutdown.sh
+sudo bash shutdown.sh
 ```
 
 服务关闭成功，请执行以下命令关闭系统代理：proxy_off
 
 ```bash
-$ proxy_off
+proxy_off
 ```
 
 然后检查程序端口、进程以及环境变量`http_proxy|https_proxy`，若都没则说明服务正常关闭。
