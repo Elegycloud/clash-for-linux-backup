@@ -115,7 +115,8 @@ proxy_on
 - 检查服务端口
 
 ```bash
-$ netstat -tln | grep -E '9090|789.'
+netstat -tln | grep -E '9090|789.'
+
 tcp        0      0 127.0.0.1:9090          0.0.0.0:*               LISTEN     
 tcp6       0      0 :::7890                 :::*                    LISTEN     
 tcp6       0      0 :::7891                 :::*                    LISTEN     
@@ -126,6 +127,7 @@ tcp6       0      0 :::7892                 :::*                    LISTEN
 
 ```bash
 env | grep -E 'http_proxy|https_proxy'
+
 http_proxy=http://127.0.0.1:7890
 https_proxy=http://127.0.0.1:7890
 ```
