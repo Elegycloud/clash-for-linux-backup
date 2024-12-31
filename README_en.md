@@ -58,7 +58,7 @@ If you enjoy this project, please give it a star!
 Clone the project repository:
 
 ```bash
-$ git clone https://github.com/Elegycloud/clash-for-linux-backup.git
+$ git clone https://github.com/Elegycloud/clash-for-linux-backup.git clash-for-linux
 ```
 
 Navigate to the project directory and edit the `.env` file to modify the `CLASH_URL` variable.
