@@ -144,7 +144,15 @@ fi
 ## Clash 配置文件重新格式化及配置
 # 取出代理相关配置 
 #sed -n '/^proxies:/,$p' $Temp_Dir/clash.yaml > $Temp_Dir/proxy.txt
-sed -n '/^proxies:/,$p' $Temp_Dir/clash_config.yaml > $Temp_Dir/proxy.txt
+sed -n '/^proxies:/,$p' $Temp_Dir/clash_config.yaml |\
+sed -e '/^port:/d'\
+    -e '/^socks-port:/d'\
+    -e '/^redir-port:/d'\
+    -e '/^allow-lan"/d'\
+    -e '/^mode:/d'\
+    -e '/^log-level:/d'\
+    -e '/^external-controller:/d'
+    -e '/^secret:/d' > $Temp_Dir/proxy.txt
 
 # 合并形成新的config.yaml
 cat $Temp_Dir/templete_config.yaml > $Temp_Dir/config.yaml
