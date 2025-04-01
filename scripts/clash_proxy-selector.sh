@@ -7,7 +7,7 @@ Secret="填写Clash Secret"
 # 获取Clash代理节点列表
 get_proxy_list() {
     # 使用您的命令获取代理节点列表
-    proxies=$(curl -s -XGET -H "Content-Type: application/json" -H "Authorization: Bearer ${Secret}" $api_url/proxies | jq -r '.proxies.Proxy.all[]')
+    proxies=$(curl -s -XGET -H "Content-Type: application/json" -H "Authorization: Bearer ${Secret}" $api_url/proxies | jq -r '.proxies.GLOBAL.all[]')
 }
 
 # 获取Clash代理模式列表
@@ -35,7 +35,7 @@ select_proxy() {
     fi
     get_proxy_list
     echo "========== 代理节点列表 =========="
-    i=1
+    i=0
     for proxy in $proxies; do
         echo "$i. $proxy"
         i=$((i+1))
