@@ -151,7 +151,7 @@ sed -e '/^port:/d'\
     -e '/^allow-lan"/d'\
     -e '/^mode:/d'\
     -e '/^log-level:/d'\
-    -e '/^external-controller:/d'
+    -e '/^external-controller:/d'\
     -e '/^secret:/d' > $Temp_Dir/proxy.txt
 
 # 合并形成新的config.yaml
